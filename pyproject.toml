@@ -18,7 +18,8 @@ dependencies = [
     "torchvision>=0.19.1",
     "kaggle>=1.5.12",
     "hydra-core>=1.3.2",  # Added for Hydra
-    "omegaconf>=2.3.0"    # Added for Hydra's configuration support
+    "omegaconf>=2.3.0" ,   # Added for Hydra's configuration support
+    "pytest-mock>=3.10.0"
 ]
 
 # Optional: Additional tool configuration
