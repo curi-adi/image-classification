@@ -1,3 +1,4 @@
+# This is your workflow file, either `codecov.yaml` or `docker.yaml`
 name: Run Tests and Upload Code Coverage
 
 on:
@@ -34,7 +35,7 @@ jobs:
       - name: Setup Kaggle Authentication
         run: |
           mkdir -p ~/.kaggle
-          cp lightning-template-hydra-master/kaggle.json ~/.kaggle/
+          cp ./kaggle.json ~/.kaggle/kaggle.json  # Change path to ./kaggle.json if it's in the root directory
           chmod 600 ~/.kaggle/kaggle.json
 
       # Set PYTHONPATH to include the src directory
