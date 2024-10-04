@@ -1,9 +1,14 @@
 import pytest
 from pathlib import Path
 import sys
+
+# Add the src directory to sys.path using a relative path
+sys.path.insert(0, '../src')
+#sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "..src"))
+
 import lightning as L
 from unittest.mock import patch
-from src.infer import load_model, predict_single_image, load_class_names
+from infer import load_model, predict_single_image, load_class_names
 from PIL import Image
 
 # Add the src directory to sys.path using a relative path
