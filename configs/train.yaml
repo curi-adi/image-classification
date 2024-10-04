@@ -1,0 +1,13 @@
+# configs/train.yaml
+train:
+  seed: 2024
+  num_classes: 10
+  epochs: 5             # Number of training epochs
+  batch_size: 16        # Training batch size
+  lr: 1e-4              # Learning rate
+  num_workers: 4        # Number of workers for DataLoader
+  height: 224           # Input image height
+  width: 224            # Input image width
+  val_split: 0.2        # Validation split ratio
+  checkpoint_dir: "/app/src/checkpoints/"  # Directory to save model checkpoints
+  log_every_n_steps: 1  # Log every n steps

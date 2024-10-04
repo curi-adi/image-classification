@@ -5,6 +5,7 @@ import torch
 from torchvision import models
 from datamodules.catdog import DogImageDataModule  # Import your data module
 from rich.console import Console
+import lightning as L
 
 console = Console()
 

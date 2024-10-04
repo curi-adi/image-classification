@@ -7,6 +7,10 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 import os
 import multiprocessing
 
+# Set the environment variable to point to the directory containing kaggle.json
+os.environ['KAGGLE_CONFIG_DIR'] = str(Path(__file__).resolve().parent.parent.parent)
+
+
 class DogImageDataModule(L.LightningDataModule):
     def __init__(self, data_dir: str = "data/dataset", batch_size: int = 8, num_workers: int = None, train_val_split: float = 0.8):
         super().__init__()

@@ -1,3 +1,4 @@
 defaults:
-  - eval: eval
+  - train: train       # Adds the training configuration
+  - eval: eval         # Adds the evaluation configuration (for eval.py)
   - infer: infer
