@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, '../src')
 
 
-from src.utils.pylogger import get_pylogger
+from utils.pylogger import get_pylogger
 
 def test_get_pylogger():
     # Test logger initialization with default name
