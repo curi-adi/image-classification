@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import MagicMock, patch
 from kaggle.api.kaggle_api_extended import KaggleApi
-from datamodules.catdog import DogImageDataModule
+from src.datamodules.catdog import DogImageDataModule
 import torch
 from torchvision import transforms
 

@@ -4,7 +4,7 @@ from rich.console import Console
 from rich.panel import Panel
 import rich.syntax
 import rich.tree
-from utils.rich_utils import print_rich_panel, print_rich_progress, print_config_tree
+#from utils.rich_utils import print_rich_panel, print_rich_progress, print_config_tree
 
 def test_print_rich_panel(capsys):
     print_rich_panel("This is a test message", "Test Panel")
