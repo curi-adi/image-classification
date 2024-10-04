@@ -29,7 +29,7 @@ target-version = ['py39']
 # Pytest configuration options
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "--cov=src --cov-report=xml"
+addopts = "--cov=src --cov-report=xml --import-mode=importlib"
 testpaths = [
     "tests"  # Ensure pytest knows where to look for test files
 ]
