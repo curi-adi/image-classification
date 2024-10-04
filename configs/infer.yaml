@@ -1,0 +1,6 @@
+# configs/infer.yaml
+infer:
+  checkpoint_path: "/app/src/checkpoints/mobilenetv2_checkpoint.ckpt"
+  image_folder: "/app/new_images"
+  num_classes: 10
+  data_dir: "data/dataset"

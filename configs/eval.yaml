@@ -1,0 +1,6 @@
+# configs/eval.yaml
+eval:
+  checkpoint_path: "/app/src/checkpoints/mobilenetv2_checkpoint.ckpt"
+  batch_size: 16
+  num_classes: 10
+  num_workers: 4
