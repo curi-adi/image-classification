@@ -1,5 +1,9 @@
 import pytest
-from src.utils.utils import task_wrapper
+
+import sys
+sys.path.insert(0, '../src')
+
+from utils.utils import task_wrapper
 
 
 def test_task_wrapper_success():

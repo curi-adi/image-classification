@@ -1,5 +1,9 @@
 import pytest
-from src.utils.rich_utils import print_config_tree, print_rich_panel, print_rich_progress
+
+import sys
+sys.path.insert(0, '../src')
+
+from utils.rich_utils import print_config_tree, print_rich_panel, print_rich_progress
 from rich.console import Console
 from rich.panel import Panel
 import rich.syntax

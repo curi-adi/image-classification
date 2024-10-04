@@ -1,7 +1,11 @@
 import pytest
 from unittest.mock import patch, MagicMock
 import torch
-from src.train import MobileNetV2Classifier
+
+import sys
+sys.path.insert(0, '../src')
+
+from train import MobileNetV2Classifier
 
 # Test 1: Check if MobileNetV2Classifier initializes correctly
 def test_mobilenet_v2_classifier_initialization():

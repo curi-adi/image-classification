@@ -1,9 +1,10 @@
 import pytest
 from pathlib import Path
 import sys
+sys.path.insert(0, '../src')
 import lightning as L
 from unittest.mock import patch
-from src.eval import evaluate_model, MobileNetV2LightningModule
+from eval import evaluate_model, MobileNetV2LightningModule
 from torchvision import models
 import torch
 

@@ -1,5 +1,10 @@
 import pytest
 import logging
+
+import sys
+sys.path.insert(0, '../src')
+
+
 from src.utils.pylogger import get_pylogger
 
 def test_get_pylogger():

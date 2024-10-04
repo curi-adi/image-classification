@@ -1,6 +1,8 @@
 import pytest
 import torch
-from src.models.dog_classifier import DogClassifier  # Adjust the import path as necessary
+import sys
+sys.path.insert(0, '../src')
+from models.dog_classifier import DogClassifier  # Adjust the import path as necessary
 
 # Test for optimizer configuration
 def test_configure_optimizers():
